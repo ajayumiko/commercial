@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="author" content="">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Residential Projects In Noida</title>
+
+
+
+   <style>
+      .form-popup-bg {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+         justify-content: center;
+      }
+
+      .form-popup-bg {
+         position: fixed;
+         left: 0;
+         top: 0;
+         height: 100%;
+         width: 100%;
+         background-color: rgba(94, 110, 141, 0.9);
+         opacity: 0;
+         visibility: hidden;
+         -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         overflow-y: auto;
+         z-index: 10000;
+      }
+
+      .form-popup-bg.is-visible {
+         opacity: 1;
+         visibility: visible;
+         -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+         -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+         transition: opacity 0.3s 0s, visibility 0s 0s;
+      }
+
+      .form-container {
+         background-color: #fdfdfd;
+         border-radius: 10px;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         max-width: 466px;
+         margin-left: auto;
+         margin-right: auto;
+         position: relative;
+         padding: 28px;
+         color: #000000;
+      }
+
+      .close-button {
+         color: #000000;
+         width: 40px;
+         height: 40px;
+         position: absolute;
+         top: 18px;
+         right: 12px;
+         border: solid 2px #000000;
+         place-content: center;
+         display: flex;
+         align-items: center;
+         z-index: 99;
+         background-color: transparent;
+      }
+
+      .form-popup-bg:before {
+         content: '';
+         background-color: #000000;
+         opacity: 0.25;
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+      }
+
+      .popup_form {
+         width: 100%;
+         padding: .375rem .75rem;
+         font-size: 1rem;
+         font-weight: 400;
+         line-height: 1.5;
+         background: none;
+         border: 1px solid #000000;
+         outline: none;
+         color: #000000 !important;
+
+      }
+
+      .form-popup-bg .form-control:focus {
+         background: none !important;
+      }
+
+      .form-popup-bg .form-control::placeholder {
+         color: #000000;
+      }
+   </style>
+
+
+
+
+
+</head>
+
+<body>
+   <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+      <div class="modal-dialog form-container">
+         <div class="modal-content ">
+            <div class="modal-header header_bg_close">
+               <h5 class="modal-title fs-4" id="enquireModalLabel">Residential Projects In Noida</h5>
+
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="row  align-items-center">
+               <div class="col-sm-12">
+                  <div class="form_text">
+                     <div class="modal-body form_text">
+                        <form method="post" action="enquiry.php" class="contact-form">
+                           <input autocomplete="off" id="FIRSTNAME" name="name" class="form-control popup_form mb-3"
+                              data-error="Name cannot contain digit or special character" placeholder="Your Full Name"
+                              pattern="[a-zA-Z ]{4,35}" required="">
+                           <input autocomplete="off" id="EMAIL" name="email" class="form-control popup_form mb-3"
+                              data-error="Name cannot contain digit or special character" placeholder="Email Address"
+                              pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+" required="">
+                           <input autocomplete="off" type="text" id="PHONE" name="phone"
+                              class="form-control popup_form mb-3" data-error="Phone is required"
+                              placeholder="Phone/Mobile" required=""
+                              pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+
+                           <div class="col-lg-12 form-group mt-3">
+                              <div class="advanced-button">
+
+                                 <button class=item-btn id="SubmitQuerytop" type=submit>GET CALL BACK</button>
+                                 <input autocomplete="off" id="prog550688" name="PROJECT" maxlength="200" type="hidden"
+                                    value="Residential Projects In Noida">
+                                 <input autocomplete=off id=LOCATION name=LOCATION maxlength=200 type=hidden
+                                    value="Noida">
+                                 <input autocomplete=off id=TEAM name=TEAM maxlength=200 type=hidden value="umikoindia">
+                              </div>
+                           </div>
+                           <div class="text-center mt-2 col-lg-12">
+                              <a class="btn call_now" href="tel:91-7602335395"> <i
+                                    class="fa fa-phone me-2"></i>+91-7602335395</a>
+                           </div>
+                           <div class="form-response"></div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+
+
+
+   <!-- ===========================btn sticky icon start================================== -->
+   <div class="sticky_icon">
+      <div class="social_icon">
+         <ul class="d-flex">
+            <div class="col-4">
+               <li><a href="tel:+91-7602335395">Phone</a></li>
+            </div>
+            <div class="col-4">
+               <li><a href="https://api.whatsapp.com/send?phone=+917602335395 &amp;text=Hello, Residential Projects In Noida Get in touch with me my name is"
+                     target="_blank" class="fixed-Whatsapp">Whatsapp</a></li>
+            </div>
+            <div class="col-4 border-0">
+               <li><a style="cursor: pointer;" class="property-link"
+                     onclick="proprtyForm('Residential Projects In Noida')">Enquire</a></li>
+            </div>
+         </ul>
+      </div>
+   </div>
+
+
+
+
+
+
+
+
+
+   <!-- modal popup on restart -->
+   <div class="modal fade madal-reload" id="exampleModal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close btan_g" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body ">
+
+               <div class="row pt-2 align-items-center">
+                  <div class="col-sm-12">
+                     <div class="form_modal text-center">
+                        <div class="motal_form_text pb-2">
+                           <h5 class="modal-title" id="exampleModalLabel">Residential Projects In Noida</h5>
+
+                        </div>
+                        <form method="post" action="enquiry.php" class="contact-form banner_form pt-2">
+                           <div class="form_sectionr row text-center justify-content-center">
+
+                              <div class="mb-3 position-relative col-lg-12">
+                                 <input autocomplete="off" id="FIRSTNAME" name="name" class="form-control text_form"
+                                    placeholder="Your Name" data-error="Name cannot contain digit or special character"
+                                    pattern="[a-zA-Z ]{4,35}" required="">
+                                 <span class="icon-inside"><i class="fas fa-user"></i></span>
+                              </div>
+                              <div class="mb-3 position-relative col-lg-12">
+                                 <input type="email" autocomplete="off" id="EMAIL" name="email"
+                                    class="form-control email-address text_form" placeholder="Your Email"
+                                    data-error="Name cannot contain digit or special character"
+                                    pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+" required="">
+                                 <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                              </div>
+                              <div class="mb-3 position-relative col-lg-12">
+                                 <input autocomplete="off" type="text" id="PHONE" name="phone"
+                                    class="form-control number-only text_form" placeholder="Your Number"
+                                    data-error="Phone is required" required=""
+                                    pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                                 <span class="icon-inside"><i class="fa-solid fa-phone"></i></span>
+                              </div>
+                              <div class="col-lg-12 form-group">
+                                 <div class="advanced-button">
+                                    <button class="header_phone theme_button" type="submit" id="SubmitQuerytop">Get
+                                       Instant Call Back
+                                    </button>
+                                    <input autocomplete="off" id="PROJECT" name="PROJECT" maxlength="200" type="hidden"
+                                       value="Residential Projects In Noida">
+                                    <input autocomplete="off" id="LOCATION" name="LOCATION" maxlength="200"
+                                       type="hidden" value="Noida">
+                                    <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                       value="umikoweb">
+                                 </div>
+                              </div>
+                              <div class="text-center mt-2 col-lg-12">
+                                 <a class="btn call_now" href="tel:91-7602335395"> <i
+                                       class="fa fa-phone me-2"></i>+91-7602335395</a>
+                              </div>
+                              <div class="form-response"></div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+   </div>
+   <!--  -->
+
+
+
+   <!-- ==============btn scroll section start===================== -->
+   <div class="go-top"> </div>
+   <!-- =====================header sart ======================== -->
+
+   <!-- =========================header close ========================== -->
+   <header>
+      <div class="header py-lg-3 py-2 px-lg-5 px-2">
+         <div class="container-xll mx-lg-3 mx-3 header_with">
+            <div class="row align-items-center">
+               <div class="col-lg-2  text-start">
+                  <div class="logo d-flex"> <a class="logo_1" href="#"><img src="img/logo1.png" alt="logo1"
+                           width="190"></a> </div>
+               </div>
+               <div class="col-lg-7">
+                  <div class="menu float-end">
+                     <ul class="d-lg-flex align-items-center">
+                        <li><a class="active hamberger" href="#">Home</a></li>
+                        <li> <a class="hamberger" href="#all_projects">Our Projects</a></li>
+                        <li> <a class="property-link btn-a btnOpenForm"
+                              onclick="proprtyForm('Residential Projects In Noida')">Schedule Site
+                              Visit</a></li>
+                        <li> <a class="hamberger" href="#contectus">Contact Us</a></li>
+                     </ul>
+                     <div class="hamberger">
+                        <div class="mobilemenu"> </div>
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="col-lg-3">
+                  <div class="contect-us float-end " style="float: right !important;">
+                     <div class="d-flex ">
+                        <ul class="d-flex me-2 align-items-center">
+                           <li class="me-3"><a href="tel:+91-7602335395"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></a>
+                           </li>
+                           <li> <a href="tel:+91-7602335395"><span>+91-7602335395</span></a> </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+
+
+
+
+            </div>
+         </div>
+      </div>
+
+   </header> <!-- =========================header close ========================== -->
+
+   <!-- =========================header close ========================== -->
+   <div class="banner_bg">
+      <div class="banner">
+         <div class="banner_img">
+            <div class="img_banner">
+               <img src="img/banner_bg.png" width="100%" alt="banner_bg">
+            </div>
+
+            <div class="banner_text mx-md-3">
+               <div class="container-fluid mx-lg-5 px-lg-5">
+                  <div class="row align-items-center">
+
+                     <div class="col-lg-6 col-md-6">
+                        <div class="banner_wrapper_text">
+
+                           <h1 class="mb-1 mt-2 col-lg-8 ">Residential Projects In Noida</h1>
+
+                           <!-- <h6 class="mb-md-5 mb-4"><span><i class="fa-solid fa-location-arrow me-2"></i></i></span>At Near
+                              Iscon Temple, Hyderabad</h6> -->
+                           <div class="banner_highlight mt-3">
+                              <ul class="">
+
+                                 <li class="mb-3">
+                                    <h3 class=""><i class="fa-solid fa-circle-right me-3"></i> Avail Launch Benefits*
+
+                                    </h3>
+                                 </li>
+                                 <li class="mb-3">
+                                    <h3 class=""><i class="fa-solid fa-circle-right me-3"></i>Exclusive Eoi Benefits*
+                                    </h3>
+                                 </li>
+                                 <li class="">
+                                    <h3 class=""><i class="fa-solid fa-circle-right me-3"></i>Individual Lift for Each
+                                       Apartments
+                                    </h3>
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <!-- <h3 class="mt-1 mb-3 align-items-center fs-1"></h3> -->
+                           <div class="bgk mt-lg-5">
+                              <ul class="mt-3 d-flex align-items-center">
+
+                                 <li class="">
+                                    <h3 class="">Luxurious 2, 3 & 4 BHK Apartment :</h3>
+                                    <p class="mt-lg-3 mt-2">₹ 1.00 Cr* <sub class="fs-5"> Onwards </sub></p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+
+
+
+
+
+                     <div class="col-lg-5 mb-mobile mb-mobile col-md-6 d-none d-md-block">
+
+                        <div class="Banner-form  float-end">
+                           <form method="post" action="enquiry.php" class="contact-form banner_form">
+                              <div class="form_section">
+                                 <div class="form_text text-center">
+                                    <h3 class="form_title mb-3">Get in Touch with Us:</h3>
+
+                                 </div>
+                                 <div class="mb-4 position-relative">
+                                    <input autocomplete="off" id="FIRSTNAME" name="name" class="form-control text_form"
+                                       placeholder="Your Name"
+                                       data-error="Name cannot contain digit or special character"
+                                       pattern="[a-zA-Z ]{4,35}" required="">
+                                    <span class="icon-inside"><i class="fas fa-user"></i></span>
+                                 </div>
+                                 <div class="mb-4 position-relative">
+                                    <input type="email" autocomplete="off" id="EMAIL" name="email"
+                                       class="form-control text_form email-address mb-4" placeholder="Your Email"
+                                       data-error="Name cannot contain digit or special character"
+                                       pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+" required="">
+                                    <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                                 </div>
+                                 <div class="mb-4 position-relative">
+                                    <input autocomplete="off" type="text" id="PHONE" name="phone"
+                                       class="form-control text_form number-only mb-4" placeholder="Your Number"
+                                       data-error="Phone is required" required=""
+                                       pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                                    <span class="icon-inside"><i class="fa-solid fa-phone"></i></span>
+                                 </div>
+                                 <div class="col-lg-12 form-group">
+                                    <div class="advanced-button">
+                                       <button class="header_phone theme_button" type="submit" id="SubmitQuerytop">GET
+                                          CALL BACK</button>
+                                       <input autocomplete="off" id="PROJECT" name="PROJECT" maxlength="200"
+                                          type="hidden" value="Godrej Kokapet Hyderabad">
+                                       <input autocomplete="off" id="LOCATION" name="LOCATION" maxlength="200"
+                                          type="hidden" value="Hyderabad">
+                                       <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                          value="umikoweb">
+                                    </div>
+                                 </div>
+                                 <div class="text-center mt-2 col-lg-12">
+                                    <a class="btn call_now" href="tel:91-7602335395"> <i
+                                          class="fa fa-phone me-2"></i>+91-7602335395</a>
+                                 </div>
+                                 <div class="form-response"></div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+
+
+   </div>
+
+   <!-- banner section closed -->
+   <div class="form_bottom">
+      <div class="col-lg-4 mb-mobile col-md-5 d-block d-md-none">
+         <div class="Banner-form-mb">
+            <form method="post" action="enquiry.php" class="contact-form banner_form">
+               <div class="form_section">
+                  <div class="form_text text-center">
+                     <h3 class="form_title mb-2"> Schedule A Site Visit </h3>
+                  </div>
+                  <div class="mb-3">
+                     <input autocomplete="off" id="FIRSTNAME" name="name" class="form-control py-2"
+                        placeholder="Your Name" data-error="Name cannot contain digit or special character"
+                        pattern="[a-zA-Z ]{4,35}" required="">
+
+                  </div>
+                  <div class="mb-3">
+                     <input type="email" autocomplete="off" id="EMAIL" name="email"
+                        class="form-control email-address py-2" placeholder="Your Email"
+                        data-error="Name cannot contain digit or special character"
+                        pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+" required="">
+
+                  </div>
+                  <div class="mb-4">
+                     <input autocomplete="off" type="text" id="PHONE" name="phone" class="form-control number-only py-2"
+                        placeholder="Your Number" data-error="Phone is required" required=""
+                        pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+
+                  </div>
+                  <div class="col-lg-12 form-group">
+                     <div class="advanced-button">
+                        <button class="header_phone theme_button" type="submit" id="SubmitQuerytop">GET CALL
+                           BACK</button>
+                        <input autocomplete="off" id="PROJECT" name="PROJECT" maxlength="200" type="hidden"
+                           value="Residential Projects In Noida">
+                        <input autocomplete="off" id="LOCATION" name="LOCATION" maxlength="200" type="hidden"
+                           value="Noida">
+                        <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden" value="umikoweb">
+                     </div>
+                  </div>
+                  <div class="text-center mt-2 col-lg-12">
+                     <a class="btn call_now" href="tel:91-7602335395"> <i
+                           class="fa fa-phone me-2"></i>+91-7602335395</a>
+                  </div>
+                  <div class="form-response"></div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+   <main>
+
+      <div class="projects" id="all_projects">
+         <div class="container">
+            <div class="col-lg-12 text-center">
+               <h2>Noida Projects</h2>
+               <p>Find your dream home from our Premium Properties</p>
+            </div>
+            <div class="row">
+
+
+
+
+
+
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/Nirala Trio.png" width="100%" height="250" alt="">
+                        <!-- <div class="highlight_text">
+                           <p>Under Construction</p>
+                        </div> -->
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Nirala Trio</h3>
+                              <h6 class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At
+                                 Sector-2 Greater Noida
+                              </h6>
+                              <h6><b class="">Type : </b>3 BHK Apartment</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 1.38 Cr* Onwards</h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Total Floors- 27</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Total Area- 3 Acers</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Possession Date- Oct 2026</h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('Nirala Trio')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/Nirala Estate Phase II.png" width="100%" height="250" alt="">
+                        <!-- <div class="highlight_text">
+                           <p>Under Construction</p>
+                        </div> -->
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Nirala Estate Phase II</h3>
+                              <h6 class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At
+                                 Techzone 4, Greater Noida
+                              </h6>
+                              <h6><b class="">Type : </b>2 & 3 BHK Apartment</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 1.06 Cr* Onwards</h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Near Proposed metro connectivity</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Each flats 3 side open</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Earthquake Resistance Structure</h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('Nirala Estate Phase II')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/Nirala Estate Phase III.png" width="100%" height="250" alt="">
+                        <!-- <div class="highlight_text">
+                           <p>Under Construction</p>
+                        </div> -->
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Nirala Estate Phase III</h3>
+                              <h6 class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At
+                                 Techzone 4, Greater Noida
+                              </h6>
+                              <h6><b class="">Type : </b>2 & 3 BHK Apartment</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 76.4 Lacs* Onwards</h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">All apartments are 3 side open</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Dedicated Drop off area</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">150.0% price appreciation in the last 1 year</h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('Nirala Estate Phase III')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+
+
+
+
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/CRC JOYOUS.png" width="100%" height="250" alt="">
+                        <!-- <div class="highlight_text">
+                           <p>Under Construction</p>
+                        </div> -->
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>CRC JOYOUS</h3>
+                              <h6 class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At
+                                 Techzone 4, Greater Noida
+                              </h6>
+                              <h6><b class="">Type : </b>2, 3 & 4 BHK Apartment</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 1.22 Lacs* Onwards</h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Excellent Carpet Area</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Modern and Minimalist Features</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Ample Natural Light</h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm" onclick="proprtyForm('CRC JOYOUS')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/RG Luxury Homes.png" width="100%" height="250" alt="">
+                        <!-- <div class="highlight_text">
+                           <p>Under Construction</p>
+                        </div> -->
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>RG Luxury Homes</h3>
+                              <h6 class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At
+                                 Sector-16B, Greater Noida West
+                              </h6>
+                              <h6><b class="">Type : </b>3 BHK Luxury Apartment</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 1.05 Cr* Onwards</h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Launching New I-Tower</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Payment Plan : 50:25:25 / Super 20
+                                    </h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Registry Open
+                                    </h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('RG Luxury Homes')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/Nirala Aspire Gold.png" width="100%" height="250" alt="">
+                        <!-- <div class="highlight_text">
+                           <p>Under Construction</p>
+                        </div> -->
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Nirala Aspire Gold</h3>
+                              <h6 class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At SSector
+                                 16, Greater Noida
+                              </h6>
+                              <h6><b class="">Type : </b>3 BHK Luxury Apartment</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 1.05 Cr* Onwards</h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Both Side Ventilation and Balconies</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Ground+Floor+Terrace
+                                    </h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Both side ventilation and Balconies
+                                    </h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('Nirala Aspire Gold')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+
+      <div class="virtual_side_bg">
+         <div class="virtual_side">
+            <div class="container">
+               <div class="virtual_text">
+
+                  <h3 class="mb-lg-3 mb-4">Schedule A Visit</h3>
+                  <p class="col-lg-8">Discover the perfect location for your business growth. Schedule a visit to
+                     experience our
+                     top-notch commercial spaces tailored to meet your needs.</p>
+                  <div class="btan btnOpenForm mt-4 position-relative z-2"> <a style="cursor: pointer;"
+                        class="property-link" onclick="proprtyForm('Residential Projects In Noida')">Enquire <i
+                           class="fa-solid fa-arrow-trend-up ms-2"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+   </main>
+
+
+   <!-- =========== amenities section start =============== -->
+   <div class="amenities_bg" id="amenities">
+      <div class="amenities_main">
+
+         <div class="container">
+
+            <div class="col-lg-12 mb-5 text-center">
+               <ul class="d-flex text-center  justify-content-center align-items-center">
+                  <li>
+                     <div class="line1"></div>
+                  </li>
+
+                  <li>
+                     <h6 class="mx-1">Our Amenities </h6>
+                  </li>
+                  <li>
+                     <div class="line2"></div>
+                  </li>
+               </ul>
+               <h2 class="mt-2">Features &amp; Amenities</h2>
+            </div>
+            <div class="row">
+
+
+               <div class="col-lg-3  mb-4 col-6">
+                  <div class="amenities_box">
+                     <div class="overlay_text p-2">
+                        <img src="img/amenities_1.png" width="50" alt="">
+                        <h4 class="pt-2">5-Tier Security </h4>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-3  mb-4 col-6">
+                  <div class="amenities_box">
+                     <div class="overlay_text p-2">
+                        <img src="img/amenities_2.png" width="50" alt="">
+                        <h4 class="pt-2">Gym
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-3  mb-4 col-6">
+                  <div class="amenities_box">
+                     <div class="overlay_text p-2">
+                        <img src="img/amenities_3.png" width="50" alt="">
+                        <h4 class="pt-2">Swimming Pool </h4>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-3  mb-4 col-6">
+                  <div class="amenities_box">
+                     <div class="overlay_text p-2">
+                        <img src="img/amenities_4.png" width="50" alt="">
+                        <h4 class="pt-2">Air Purification</h4>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-3  mb-4 col-6">
+                  <div class="amenities_box">
+                     <div class="overlay_text p-2">
+                        <img src="img/amenities_5.png" width="50" alt="">
+                        <h4 class="pt-2">Clubhouse with</h4>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-3  mb-4 col-6">
+                  <div class="amenities_box">
+                     <div class="overlay_text p-2">
+                        <img src="img/amenities_6.png" width="50" alt="">
+                        <h4 class="pt-2">Concierge Services</h4>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-3  mb-4 col-6">
+                  <div class="amenities_box">
+                     <div class="overlay_text p-2">
+                        <img src="img/amenities_7.png" width="50" alt="">
+                        <h4 class="pt-2">Health Cafe</h4>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-3  mb-4 col-6">
+                  <div class="amenities_box">
+                     <div class="overlay_text p-2">
+                        <img src="img/amenities_8.png" width="50" alt="">
+                        <h4 class="pt-2">Private Park
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <!-- =========== amenities section start =============== -->
+
+
+   <footer>
+      <div class="footer_bg" id="contectus">
+         <div class="footer">
+            <div class="container">
+               <!-- <div class="col-lg-12 text-center mb-5"> <img src="img/logo1.png" width="150" alt=""> </div> -->
+               <div class="row">
+                  <div class="col-lg-7 col-md-6 mb-5">
+                     <div class="footer_contant">
+                        <h3>About Developer</h3>
+                        <p class="mb-3 mt-3 col-lg-11">Residential real estate projects typically involve the
+                           development, construction, and sale of properties designed for residential living. These
+                           projects can range from single-family homes to large-scale apartment complexes and gated
+                           communities. Here’s an overview of such projects:
+                        </p>
+
+                        <div class="contact_us mt-5">
+                           <ul class="d-flex align-items-center">
+                              <li><a href="tel:+91-7602335395">
+                                    <i class="fa-solid fa-phone-volume"></i></a>
+                              </li>
+                              <li class="ms-3">
+                                 <p class="pb-1">Call Us Anytime</p> <a
+                                    href="tel:+91-7602335395"><span>+91-7602335395</span></a>
+                              </li>
+                           </ul>
+
+                        </div>
+
+
+                     </div>
+                  </div>
+
+
+
+
+
+                  <div class="col-lg-5  col-md-6 mb-4">
+                     <div class="contect-form">
+                        <form method="post" action="enquiry.php" class="contact-form banner_form">
+                           <div class="form_section text-center">
+                              <div class="form_text">
+                                 <h3 class="form_title mb-3">Get in Touch with Us:</h3>
+
+                              </div>
+                              <div class="mb-3 position-relative col-lg-12">
+                                 <input autocomplete="off" id="FIRSTNAME" name="name" class="form-control text_form"
+                                    placeholder="Your Name" data-error="Name cannot contain digit or special character"
+                                    pattern="[a-zA-Z ]{4,35}" required="">
+                                 <span class="icon-inside"><i class="fas fa-user"></i></span>
+                              </div>
+                              <div class="mb-3 position-relative col-lg-12">
+                                 <input type="email" autocomplete="off" id="EMAIL" name="email"
+                                    class="form-control text_form" placeholder="Your Email"
+                                    data-error="Name cannot contain digit or special character"
+                                    pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+" required="">
+                                 <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                              </div>
+                              <div class="mb-3 position-relative col-lg-12">
+                                 <input autocomplete="off" type="text" id="PHONE" name="phone"
+                                    class="form-control text_form" placeholder="Your Number"
+                                    data-error="Phone is required" required=""
+                                    pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                                 <span class="icon-inside"><i class="fa-solid fa-phone"></i></span>
+                              </div>
+                              <div class="col-lg-12 form-group">
+                                 <div class="advanced-button">
+                                    <button class="header_phone theme_button" type="submit" id="SubmitQuerytop">GET CALL
+                                       BACK</button>
+                                    <input autocomplete="off" id="PROJECT" name="PROJECT" maxlength="200" type="hidden"
+                                       value="Prestige Projects In Bangalore">
+                                    <input autocomplete="off" id="LOCATION" name="LOCATION" maxlength="200"
+                                       type="hidden" value="Bangalore">
+                                    <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                       value="umikoweb">
+                                 </div>
+                              </div>
+                              <div class="form-response"></div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer_b mt-5">
+                  <div class="col-sm-12 text-center box">
+                     <p class="col-lg-11 information-web"><b> Disclaimer:</b> The content is for information purposes
+                        only and does not constitute an offer to avail of any service. Prices mentioned are subject to
+                        change without notice and properties mentioned are subject to availability. Images for
+                        representation purposes only. This website is belong to authorized marketing partner.
+                     </p>
+                     <div class="mt-4">
+
+                        <ul style="font-size: 15px; color: #000;" class="mt-2">
+                           <li>Nirala Trio : UPRERAPRJ707952 </li>
+                           <li>Nirala Estate Phase II: UPRERAPRJ519100 </li>
+                           <li>Nirala Estate Phase III: UPRERAPRJ265789 </li>
+                           <li>CRC JOYOUS: UPRERAPRJ613747</li>
+                           <li>RG Luxury Homes: UPRERAPRJ448790</li>
+                           <li>Nirala Aspire Gold: UPRERAPRJ783018</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bootom">
+         <ul class="footermenu">
+            <li>
+               <p style="text-align: center;"><strong><a href="disclaimer.html" target="_blank"><span
+                           style="color: #000000;">Privacy Policy</span></a>&nbsp;|&nbsp;<a href="disclaimer.html"
+                        target="_blank"><span style="color: #000000;"></span> Terms & Conditions </a> </strong> </p>
+            </li>
+         </ul>
+      </div>
+   </footer>
+
+
+
+   <!-- ===============footer section start========================== -->
+
+
+
+
+
+   <script src=" https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+      integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/popper/popper.min.js"></script>
+   <script src="js/bootstrap/bootstrap.min.js"></script>
+
+   <!-- Page JS Implementing Plugins (Remove the plugin script here if site does not use that feature)-->
+   <script src="js/jquery.appear.js"></script>
+   <script src="js/counter/jquery.countTo.js"></script>
+   <script src="js/select2/select2.full.js"></script>
+   <script src="js/range-slider/ion.rangeSlider.min.js"></script>
+   <script src="js/owl-carousel/owl.carousel.min.js"></script>
+   <script src="js/jarallax/jarallax.min.js"></script>
+   <script src="js/jarallax/jarallax-video.min.js"></script>
+   <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script> -->
+   <script src="js/main.js"></script>
+   <script src="js/custom.js"></script>
+
+   <script>
+      function proprtyForm(titlehoem) {
+         $('#prog550688').val(titlehoem);
+         $('#enquireModalLabel').text(titlehoem);
+         $('#enquireModal').modal('show');
+      }
+
+
+      $(document).ready(function () {
+         setTimeout(() => {
+            $('#newlaunchModal').modal('show')
+         }, 1000);
+      })
+
+
+
+
+   </script>
+
+
+</body>
+
+</html>
